@@ -1,0 +1,21 @@
+const express = require('express')
+const router = express.Router();
+const Cname = require('../../../controller/admin/CMS/Cname')
+const Footer = require('../../../controller/admin/CMS/Footer')
+const Shipping = require('../../../controller/admin/CMS/Shipping')
+const Logo = require('../../../controller/admin/CMS/LogoUpdate')
+router.put('/addcname', Cname.updateCname)
+router.get('/getcname', Cname.getCname)
+router.get('/getfooter', Footer.getFooter)
+router.put('/addfooter', Footer.updatefooter)
+router.get('/getfooter', Footer.getFooter)
+router.get('/getlogo', Logo.getlogo)
+router.put('/addlogo', Logo.create_logo)
+router.get('/getfooterlogo', Logo.getfooterlogo)
+router.put('/addfooterlogo', Logo.createFooterLlogo)
+
+router.put('/addshippingfee', Shipping.create_shipping)
+router.get('/getshippingfee', Shipping.getShipping)
+router.put('/initialshippingfee',Shipping.create_Intitalshipping)
+router.get('/getinitialshipping',Shipping.getInitalShipping)
+module.exports = router 

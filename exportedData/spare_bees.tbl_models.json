@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "65e08a8358895da5390366ba"
+  },
+  "name": "Model New",
+  "desc": "Model New ",
+  "is_deleted": false,
+  "created_at": {
+    "$date": "2024-02-29T13:45:39.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65eecebc155fb3315162c987"
+  },
+  "name": "sample",
+  "desc": "desc",
+  "is_deleted": true,
+  "created_at": {
+    "$date": "2024-03-11T09:28:28.712Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fe582c4b997f77ed06915a"
+  },
+  "name": "HUNDAI",
+  "desc": "adf",
+  "is_deleted": false,
+  "created_at": {
+    "$date": "2024-03-23T04:18:52.402Z"
+  },
+  "__v": 0
+}]
