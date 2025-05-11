@@ -38,9 +38,9 @@ const shipping_policy = require("./Routes/admin/CMS/Shipping_policy");
 const contact_us = require("./Routes/admin/CMS/contact_us");
 const image = require("./Routes/image");
 const AboutUs = require("./Routes/admin/CMS/aboutUs");
-const messageRoute=require("./Routes/messageRoute")
-const conservationRoute=require("./Routes/conservationRoute")
-const deliveryRoute=require("./Routes/delivery/DeliverychargeRoute")
+const messageRoute = require("./Routes/messageRoute")
+const conservationRoute = require("./Routes/conservationRoute")
+const deliveryRoute = require("./Routes/delivery/DeliverychargeRoute")
 
 //Middleware
 const app = express();
@@ -96,7 +96,9 @@ app.use("/conservation", conservationRoute);
 
 //PORT
 
-
+app.get("/test", (req, res) => {
+  res.json({ message: "Server is working fine!" });
+});
 
 
 
