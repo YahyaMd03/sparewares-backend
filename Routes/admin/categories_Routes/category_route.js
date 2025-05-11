@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express')
 const router = express.Router();
 const categorycontroler = require('../../../controller/admin/categories_Controllers/category_Controller')
